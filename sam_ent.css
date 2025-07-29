@@ -1,0 +1,163 @@
+body{
+    background-color: yellow;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: black;
+}
+header > p{
+    margin-left: 50px;
+    text-shadow: 0 0 5px #0bf, 0 0 10px #0bf, 0 0 15px yellow;
+    font-size: 30px;
+    font-family: cursive;
+}
+.header-search{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: yellow;
+    background-color: darkgrey;
+    color: white;
+}
+
+.header-search:hover{
+    box-shadow: 0 0 10px yellow;
+}
+
+.header-search::after{
+    box-shadow: 0 0 10px #0bf;
+}
+
+.ha{
+    color: white;
+}
+
+.ha:hover{
+    background-color: yellow;
+    color: red;
+    opacity: 0.9;
+}
+
+.header-contact-us{
+    background-color: palevioletred;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+header > ul{
+    display: flex;
+    margin-left: 120px;
+}
+
+header > ul li{
+    margin: 20px;
+}
+
+
+nav{
+    background-color: black;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    width: vw;
+    word-break: ellipsis;
+}
+
+aside > ul{
+    text-align: center;
+}
+
+.la{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    background-color: grey;
+    height: 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #0bf;
+}
+
+.la:hover{
+    background-color: aliceblue;
+    box-shadow: 0 0 5px #0bf, 0 0 10px #0bf, 0 0 20px #0bf, 0 0 10px #0bf inset;
+}
+
+.aa{
+    color: yellow;
+}
+
+main {
+    position: relative; /* NEW: Required for overlay positioning */
+    text-align: center;
+    background-image: url(https://media.gettyimages.com/id/1162545263/photo/this-latest-update-just-came-through.jpg?s=612x612&w=gi&k=20&c=C-UL7Rv2pWYiZqVGMG-EeJh0Pvxi5CDZ8P_f71rVJSQ=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 100px;
+    box-sizing: content-box;
+    color: white; /* Ensures text stays visible */
+    z-index: 1;   /* NEW */
+    overflow: hidden; /* NEW: Prevents overlay from spilling outside */
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Darkness level — adjust as needed */
+    border-radius: 10px;
+    z-index: 0;
+}
+
+main > * {
+    position: relative;
+    z-index: 2;
+}
+
+#main-pre1{
+    text-align: left;
+}
+
+#main-pre2{
+    text-align: left;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: white;
+    box-shadow: 0 0 5px yellow, 0 0 10px yellow;
+}
+
+button:hover{
+    box-shadow: inset 0 0 5px plum, 0 0 10px plum inset, 0 0 20px plum inset;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
